@@ -1,8 +1,4 @@
-<!doctype html>
-<head>
- <title>Imemory21 Website</title>
- <meta charset="utf-8">
-</head>
+#Imemory21 Website
 <body> 
  <ol>
   <li>Imemory21 Introduce</li>
