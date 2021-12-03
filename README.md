@@ -1,17 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <title>Imemory21 healthy</title>
-  <meta charset="utf-8">
-  <style>
-   h1{font-size:5rem;}
-   h2{font-size:3rem;}
-   ul{background-color: white;}
-   li{font-size:2rem;color:blue}
-   body {font-size:1.5rem;}
-  </style>
-</head>
-  <body>
+<body>
     <body bgcolor='cccccc'>
     <h1><a href="index.html">Imemory21 project</a></h1>
    <ol>
