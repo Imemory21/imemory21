@@ -7,46 +7,52 @@
   @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
    #font1 {font-family: 'Jua', sans-serif;}
    #font2 {Font-Family:calisto MT;}
-       .container{
-           display: flex;
-           flex-direction: column;
-       }
-       header{
-           font-size:3rem; text-align:center;
-           border-bottom:4px solid gray;
-           padding:5px;
-       }
-       footer{
-           border-top:4px solid gray;
-           padding:10px;
-           text-align: center; font-size:2rem;
-       }
-       .content{
-           display:flex; font-size: 2rem;
-       }
-       .content nav{
-           border-right:4px solid gray; text-align:center;
-       }
-       .content aside{
-           border-left:4px solid gray; text-align:center;
-       }
-       nav, aside{
-           flex-basis: 120px;
-           flex-shrink: 0;
-       }
-       main{
-           padding:20px; text-align:center; border:10px;
-       }
-       p{border:4px solid gray; text-align:center;}
+   *{
+box-sizing:border-box;
+}
+.container{
+width:750px;
+border:1px solid gray;
+margin:auto;
+}
+header{
+border-bottom: 1px solid gray;
+text-align: center;
+}
+nav{
+float:left;
+width:150px;
+border-right:1px solid gray;
+}
+article{
+float:left;
+width:450px;
+border-left:1px solid gray;
+border-right:1px solid gray;
+margin-left:-1px;
+text-align: center;
+}
+aside{
+float:left;
+width:120px;
+border-left:1px solid gray;
+margin-left:-1px;
+}
+footer{
+clear:both;
+border-top:1px solid gray;
+text-align: center;
+padding:20px;
+}
+  p{border:2px solid gray; text-align:center; padding: 10px; margin:5px;}
   </style>
 </head>
   <body>
-   <body bgcolor='ffffff'>
+   <body bgcolor='fff0f0'>
     <div class="container">
         <header>
-            <h1><p id="font2">Imemory21 Project</p></h1>
+            <h1 id="font2">Imemory21 Project</h1>
         </header>
-        <section class="content">
             <nav>
                 <ul>contents
                   <li><a href="1.html">  What're conponents of Healthy?</a></li>
@@ -54,16 +60,16 @@
                   <li><a href="3.html">  good bye! pain!</a></li>
                 </ul>
             </nav>
-            <main>
-              <img src="Logo.jpg" width="100%" align="center">
+              <article>
+                <h2>wellcome</h2>
+              <img src="Logo.jpg" width="90%" align="center">
              <p id="font1">안녕하세요. <strong><i>Imemory21 website</i></strong> 입니다. 건강에 관한 정보가 홍수처럼 밀려나오는 이 시대에  좀 더 정확하고 설득력 있는 정보를 나눠드리고자 웹사이트를 만들게 되었습니다.
              <br><i>Imemory21</i>에서는 현재까지 정설로 받아들여지는 이론과 새롭게 발표된 이론들을 통해 취합하여 건강에 대한 정보들을 자유롭고 심도있게 다뤄 드리도록 하겠습니다.
              귀하에게 많은 도움이 되길바라며 지금 부터 <i>Imemory21</i>에서 행복한 시간이 되었으면 좋겠습니다.감사합니다.</p>
-           </main>
+           </article>
             <aside>
                 AD
             </aside>
-        </section>
         <footer>
             <a href="https://www.instagram.com/imemory21/">인스타그램 바로가기</a>
         </footer>
