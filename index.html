@@ -7,10 +7,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
    #font1 {font-family: 'Jua', sans-serif;}
    #font2 {Font-Family:calisto MT;}
-   div{background-image: url(Logo.jpg);
-   background-repeat : no-repeat;
-   background-position : center;
-   background-size : contain; }
+      div{
+      position: relative;
+      background: url(Logo.jpg);
+      background-size: cover; background-position : center;
+      background-repeat : no-repeat;
+      background-color: rgba(0,0,0,0.8);
+  }
    .container{
                display: flex;
                flex-direction: column;
@@ -44,10 +47,21 @@
               li{font-size:3rem;color:black; padding:15px}
               body {font-size:2rem;color: black;}
               p{border:3px solid gray; text-align:center; padding: 10px; margin:5px;}
-  </style>
+              a{
+      display:inline-block;
+/*
+      transition-property: font-size transform;
+      transition-duration: 1s;
+      transition:all 0.5s;
+*/
+      transition:all 0.5s;
+    }
+    a:active{
+      transform:translate(20px, 20px);}
+    </style>
 </head>
-  <body>
-   <body bgcolor='fff0f0'>
+   <body>
+    <body bgcolor='fff0f0'>
     <div class="container">
         <header>
             <h1 id="font2">Imemory21 Project</h1>
