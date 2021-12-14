@@ -7,13 +7,24 @@
   @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
    #font1 {font-family: 'Jua', sans-serif;}
    #font2 {Font-Family:calisto MT;}
-      div{
-      position: relative;
-      background: url(Logo.jpg);
-      background-size: cover; background-position : center;
-      background-repeat : no-repeat;
-      background-color: rgba(0,0,0,0.8);
-  }
+   div {
+       position:relative;
+       z-index:1;
+   }
+   div:after {
+       background-image:url(Logo.jpg);
+       top:0;
+       left:0;
+       position: absolute;
+       background-size:100%;
+       opacity:0.7!important;
+       filter:alpha(opacity=70);
+       z-index:-1;
+       content:"";
+       width:100%;
+       height:100%;
+       background-repeat : no-repeat;}
+
    .container{
                display: flex;
                flex-direction: column;
@@ -42,20 +53,20 @@
            }
            main{
                padding:10px;}
-              h1{font-size:6rem; text-align:center;}
-              h2{font-size:5rem; text-align:center;}
-              li{font-size:3rem;color:black; padding:15px}
-              body {font-size:2rem;color: black;}
-              p{border:3px solid gray; text-align:center; padding: 10px; margin:5px;}
-              a{
-      display:inline-block;
-/*
+      h1{font-size:6rem; text-align:center;}
+      h2{font-size:5rem; text-align:center;}
+      li{font-size:3rem;color:black; padding:15px}
+      body {font-size:2rem;color: black;}
+      p{border:3px solid gray; text-align:center; padding: 10px; margin:5px;}
+      a{
+        display:inline-block;
+         /*
       transition-property: font-size transform;
       transition-duration: 1s;
       transition:all 0.5s;
-*/
+        */
       transition:all 0.5s;
-    }
+       }
     a:active{
       transform:translate(20px, 20px);}
     </style>
